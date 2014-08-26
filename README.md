@@ -19,10 +19,14 @@ and the [Amazon Kinesis Connector Library](https://github.com/awslabs/amazon-kin
 
 ## Building the app
 
-The build uses [Maven](http://maven.apache.org/). Run
+Checkout the source using Git.
+
+Initialize the `amazon-kinesis-connectors` submodule using `git submodule update --init --recursive`
+
+Build with [Maven](http://maven.apache.org/). Running
 
     mvn package
-to create a runnable jar under `./target/`
+will create a runnable jar at `./target/kinesis-to-s3-[version].jar`
 
 ## Development
 
