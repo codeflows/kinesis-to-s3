@@ -17,20 +17,18 @@ and the [Amazon Kinesis Connector Library](https://github.com/awslabs/amazon-kin
         1. No configuration needed if you start the server instance with a proper IAM role (highly recommended!)
 4. Run the app: `java -jar kinesis-to-s3-[version].jar configuration.properties`
 
-## Building the app
+## Development
 
-Checkout the source using Git.
+Checkout the source using Git. Initialize the `amazon-kinesis-connectors` submodule using `git submodule update --init --recursive`
 
-Initialize the `amazon-kinesis-connectors` submodule using `git submodule update --init --recursive`
+The main class is `com.github.codeflows.aws.KinesisToS3`
+
+### Building
 
 Build with [Maven](http://maven.apache.org/). Running
 
     mvn package
 will create a runnable jar at `./target/kinesis-to-s3-[version].jar`
-
-## Development
-
-See the main class `com.github.codeflows.aws.KinesisToS3`
 
 ## Rationale
 
