@@ -24,7 +24,7 @@ The main class is `com.github.codeflows.aws.KinesisToS3`
 
 Build with [Maven](http://maven.apache.org/). Running
 
-    mvn package
+    mvn clean package
 will create a runnable jar at `./target/kinesis-to-s3-[version].jar`
 
 ## Notes
