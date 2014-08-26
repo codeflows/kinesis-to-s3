@@ -19,7 +19,7 @@ and the [Amazon Kinesis Connector Library](https://github.com/awslabs/amazon-kin
 
 ## Building the app
 
-The build uses Maven. Run
+The build uses [Maven](http://maven.apache.org/). Run
 
     mvn package
 to create a runnable jar under `./target/`
