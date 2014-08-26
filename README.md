@@ -4,7 +4,7 @@ Application for copying Amazon Kinesis data to S3.
 
 ## Usage
 
-1. [Download the app](TODO)
+1. [Download the app](https://github.com/codeflows/kinesis-to-s3/releases)
 2. Configure your application (start with the template `KinesisToS3.SAMPLE.properties`)
 3. Configure AWS access credentials:
     1. Locally, set either
