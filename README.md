@@ -2,9 +2,6 @@
 
 Application for copying Amazon Kinesis data to S3.
 
-Uses the [Amazon Kinesis Client Library](https://github.com/awslabs/amazon-kinesis-client)
-and the [Amazon Kinesis Connector Library](https://github.com/awslabs/amazon-kinesis-connectors).
-
 ## Usage
 
 1. [Download the app](TODO)
@@ -30,11 +27,12 @@ Build with [Maven](http://maven.apache.org/). Running
     mvn package
 will create a runnable jar at `./target/kinesis-to-s3-[version].jar`
 
-## Rationale
+## Notes
+
+Uses the [Amazon Kinesis Client Library](https://github.com/awslabs/amazon-kinesis-client)
+and the [Amazon Kinesis Connector Library](https://github.com/awslabs/amazon-kinesis-connectors).
+
+See ["Building a Kinesis application"](http://docs.aws.amazon.com/kinesis/latest/dev/kinesis-record-processor-implementation-app.html) for more details.
 
 The [Kinesis Connector sample code](https://github.com/awslabs/amazon-kinesis-connectors/tree/master/src/main/samples)
 is pretty complex, this project does one simple thing.
-
-## Notes
-
-The project contains `amazon-kinesis-connectors` as a Git submodule [because it's not offered as a Maven dependency yet.](https://github.com/awslabs/amazon-kinesis-connectors/pull/11)
