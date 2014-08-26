@@ -5,18 +5,19 @@ Application for copying Amazon Kinesis data to S3.
 1. [Download the app](TODO)
 2. Configure your application (start with the template `KinesisToS3.SAMPLE.properties`)
 3. Configure AWS access credentials:
-    1. Locally
-        1. Set the environment variables `AWS_ACCESS_KEY_ID=xxx` and `AWS_SECRET_KEY=yyy`
+    1. Locally, set either
+        1. the environment variables `AWS_ACCESS_KEY_ID=xxx` and `AWS_SECRET_KEY=yyy`
         2. or the JVM options `-Daws.accessKeyId=xxx` and `-D=aws.secretKey=yyy`
     2. On Amazon EC2
-        1. No configuration needed if you start the server instance with a proper IAM role.
-4. Run the jar: `java -jar kinesis-to-s3.jar` [configuration.properties]
+        1. No configuration needed if you start the server instance with a proper IAM role (highly recommended!)
+4. Run the app: `java -jar kinesis-to-s3-[version].jar configuration.properties`
 
-### Building the jar from source
+### Building the app
 
-`mvn package`
+The build uses Maven. Run
 
-creates a runnable jar under ./target/
+    mvn package
+to create a runnable jar under `./target/`
 
 ### Development
 
