@@ -1,0 +1,3 @@
+[submodule "amazon-kinesis-connectors"]
+	path = amazon-kinesis-connectors
+	url = https://github.com/awslabs/amazon-kinesis-connectors.git
