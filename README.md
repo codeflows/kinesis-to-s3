@@ -29,10 +29,15 @@ will create a runnable jar at `./target/kinesis-to-s3-[version].jar`
 
 ## Notes
 
-Uses the [Amazon Kinesis Client Library](https://github.com/awslabs/amazon-kinesis-client)
-and the [Amazon Kinesis Connector Library](https://github.com/awslabs/amazon-kinesis-connectors).
+Licensed under the MIT license.
 
-See ["Building a Kinesis application"](http://docs.aws.amazon.com/kinesis/latest/dev/kinesis-record-processor-implementation-app.html) for more details.
+Uses the [Amazon Kinesis Client Library](https://github.com/awslabs/amazon-kinesis-client),
+the [Amazon Kinesis Connector Library](https://github.com/awslabs/amazon-kinesis-connectors)
+and the [AWS SDK for Java](https://github.com/aws/aws-sdk-java). These are also embedded in
+the runnable jar. See [the AWS licensing terms](AMAZON_SOFTWARE_LICENSE.txt).
+
+## Rationale
 
 The [Kinesis Connector sample code](https://github.com/awslabs/amazon-kinesis-connectors/tree/master/src/main/samples)
-is pretty complex, this project does one simple thing.
+contains code for copying Kinesis data to S3, but is not easily reusable. This application
+contains the minimal code for the copying process and nothing else.
