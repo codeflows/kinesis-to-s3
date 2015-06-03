@@ -11,20 +11,9 @@
     <dependencies>
         <dependency>
             <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk</artifactId>
-            <version>1.8.9.1</version>
+            <artifactId>amazon-kinesis-connectors</artifactId>
+            <version>1.1.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>amazon-kinesis-client</artifactId>
-            <version>1.1.0</version>
-        </dependency>
-        <!--
-          Also depends on amazon-kinesis-connectors, which is not available as a Maven dependency:
-          https://github.com/awslabs/amazon-kinesis-connectors/pull/11
-
-          Instead we include it as a git submodule.
-        -->
     </dependencies>
 
     <build>
@@ -37,24 +26,6 @@
                     <target>1.7</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
-            </plugin>
-            <!-- Add kinesis-connectors sources from the git submodule -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                        </goals>
-                        <configuration>
-                            <sources>
-                                <source>amazon-kinesis-connectors/src/main/java</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <!-- Build an executable jar -->
             <plugin>

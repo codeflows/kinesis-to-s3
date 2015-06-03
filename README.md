@@ -16,8 +16,6 @@ Application for copying Amazon Kinesis data to S3.
 
 ## Development
 
-Checkout the source using Git. Initialize the `amazon-kinesis-connectors` submodule using `git submodule update --init --recursive`
-
 The main class is `com.github.codeflows.aws.KinesisToS3`
 
 ### Building
